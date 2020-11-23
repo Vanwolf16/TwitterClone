@@ -15,6 +15,15 @@
 		B480CCAD2569B19600BB0AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B480CCAB2569B19600BB0AF8 /* LaunchScreen.storyboard */; };
 		B480CCB82569B19600BB0AF8 /* TwitterCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCB72569B19600BB0AF8 /* TwitterCloneTests.swift */; };
 		B480CCC32569B19600BB0AF8 /* TwitterCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCC22569B19600BB0AF8 /* TwitterCloneUITests.swift */; };
+		B480CCDD2569B1E800BB0AF8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCDC2569B1E800BB0AF8 /* Extensions.swift */; };
+		B480CCE22569B25C00BB0AF8 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCE12569B25C00BB0AF8 /* MainTabController.swift */; };
+		B480CCE82569B39900BB0AF8 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCE72569B39900BB0AF8 /* FeedController.swift */; };
+		B480CCED2569B3CC00BB0AF8 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCEC2569B3CC00BB0AF8 /* ExploreController.swift */; };
+		B480CCF22569B3F400BB0AF8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCF12569B3F400BB0AF8 /* NotificationController.swift */; };
+		B480CCF72569B41000BB0AF8 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CCF62569B41000BB0AF8 /* ConversationController.swift */; };
+		B4BF9EC7256C415400DB282A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9EC6256C415400DB282A /* LoginController.swift */; };
+		B4BF9ECC256C416200DB282A /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9ECB256C416200DB282A /* RegisterController.swift */; };
+		B4BF9ED9256C43FD00DB282A /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9ED8256C43FD00DB282A /* Utilites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		B480CCBE2569B19600BB0AF8 /* TwitterCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B480CCC22569B19600BB0AF8 /* TwitterCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITests.swift; sourceTree = "<group>"; };
 		B480CCC42569B19600BB0AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B480CCDC2569B1E800BB0AF8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B480CCE12569B25C00BB0AF8 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		B480CCE72569B39900BB0AF8 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		B480CCEC2569B3CC00BB0AF8 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		B480CCF12569B3F400BB0AF8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B480CCF62569B41000BB0AF8 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
+		B4BF9EC6256C415400DB282A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B4BF9ECB256C416200DB282A /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		B4BF9ED8256C43FD00DB282A /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,12 @@
 		B480CC9F2569B19500BB0AF8 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				B480CCDB2569B1C800BB0AF8 /* Utils */,
+				B480CCDA2569B1C600BB0AF8 /* API */,
+				B480CCD92569B1C500BB0AF8 /* Model */,
+				B480CCD82569B1C400BB0AF8 /* ViewModel */,
+				B480CCD72569B1C200BB0AF8 /* View */,
+				B480CCD62569B1C000BB0AF8 /* Controller */,
 				B480CCA02569B19500BB0AF8 /* AppDelegate.swift */,
 				B480CCA22569B19500BB0AF8 /* SceneDelegate.swift */,
 				B480CCA42569B19500BB0AF8 /* ViewController.swift */,
@@ -126,6 +150,73 @@
 				B480CCC42569B19600BB0AF8 /* Info.plist */,
 			);
 			path = TwitterCloneUITests;
+			sourceTree = "<group>";
+		};
+		B480CCD62569B1C000BB0AF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4BF9EC5256C413600DB282A /* Authentication */,
+				B480CCE62569B38900BB0AF8 /* TabControllers */,
+				B480CCE12569B25C00BB0AF8 /* MainTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B480CCD72569B1C200BB0AF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B480CCD82569B1C400BB0AF8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B480CCD92569B1C500BB0AF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B480CCDA2569B1C600BB0AF8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B480CCDB2569B1C800BB0AF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B480CCDC2569B1E800BB0AF8 /* Extensions.swift */,
+				B4BF9ED8256C43FD00DB282A /* Utilites.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B480CCE62569B38900BB0AF8 /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B480CCE72569B39900BB0AF8 /* FeedController.swift */,
+				B480CCEC2569B3CC00BB0AF8 /* ExploreController.swift */,
+				B480CCF12569B3F400BB0AF8 /* NotificationController.swift */,
+				B480CCF62569B41000BB0AF8 /* ConversationController.swift */,
+			);
+			path = TabControllers;
+			sourceTree = "<group>";
+		};
+		B4BF9EC5256C413600DB282A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B4BF9EC6256C415400DB282A /* LoginController.swift */,
+				B4BF9ECB256C416200DB282A /* RegisterController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +350,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B480CCA52569B19500BB0AF8 /* ViewController.swift in Sources */,
+				B480CCF72569B41000BB0AF8 /* ConversationController.swift in Sources */,
+				B4BF9ECC256C416200DB282A /* RegisterController.swift in Sources */,
+				B480CCE82569B39900BB0AF8 /* FeedController.swift in Sources */,
+				B4BF9ED9256C43FD00DB282A /* Utilites.swift in Sources */,
+				B480CCF22569B3F400BB0AF8 /* NotificationController.swift in Sources */,
+				B480CCED2569B3CC00BB0AF8 /* ExploreController.swift in Sources */,
 				B480CCA12569B19500BB0AF8 /* AppDelegate.swift in Sources */,
+				B480CCE22569B25C00BB0AF8 /* MainTabController.swift in Sources */,
 				B480CCA32569B19500BB0AF8 /* SceneDelegate.swift in Sources */,
+				B480CCDD2569B1E800BB0AF8 /* Extensions.swift in Sources */,
+				B4BF9EC7256C415400DB282A /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M226WNK72;
 				INFOPLIST_FILE = TwitterClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M226WNK72;
 				INFOPLIST_FILE = TwitterClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
